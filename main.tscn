@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=4 uid="uid://dlls2n2o0oeqg"]
+[gd_scene load_steps=44 format=4 uid="uid://dlls2n2o0oeqg"]
 
 [ext_resource type="PackedScene" uid="uid://c28umakxaf3ca" path="res://Ingredients/Egg.tscn" id="1_7mycd"]
 [ext_resource type="PackedScene" uid="uid://bx5wn2wcrtthr" path="res://Ingredients/Apple.tscn" id="1_ig7tw"]
@@ -38,6 +38,9 @@
 [ext_resource type="PackedScene" uid="uid://cmq5828jm2e8a" path="res://Characters/Soldier.tscn" id="36_come4"]
 [ext_resource type="PackedScene" uid="uid://bbfdheig4g0bt" path="res://Characters/Warrior.tscn" id="37_h8e4i"]
 [ext_resource type="PackedScene" uid="uid://om7pw4cn3e45" path="res://Characters/Rogue.tscn" id="38_b1qrp"]
+[ext_resource type="PackedScene" uid="uid://cjuy8pqox6wr7" path="res://Characters/Mage.tscn" id="39_4lmeg"]
+[ext_resource type="PackedScene" uid="uid://bwnoqqbqn1k80" path="res://Characters/Barbarian.tscn" id="40_0cp0l"]
+[ext_resource type="PackedScene" uid="uid://bxxv63k3divtq" path="res://Characters/Enemy.tscn" id="41_d2t1y"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1u8w0"]
 texture = ExtResource("23_d13ii")
@@ -1253,3 +1256,12 @@ offset = Vector2(48, 0)
 
 [node name="Rogue" parent="Characters" instance=ExtResource("38_b1qrp")]
 offset = Vector2(48, 16)
+
+[node name="Mage" parent="Characters" instance=ExtResource("39_4lmeg")]
+offset = Vector2(48, 80)
+
+[node name="Barbarian" parent="Characters" instance=ExtResource("40_0cp0l")]
+offset = Vector2(48, 64)
+
+[node name="Enemy" parent="Characters" instance=ExtResource("41_d2t1y")]
+offset = Vector2(48, 96)
