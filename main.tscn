@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=4 uid="uid://dlls2n2o0oeqg"]
+[gd_scene load_steps=41 format=4 uid="uid://dlls2n2o0oeqg"]
 
 [ext_resource type="PackedScene" uid="uid://c28umakxaf3ca" path="res://Ingredients/Egg.tscn" id="1_7mycd"]
 [ext_resource type="PackedScene" uid="uid://bx5wn2wcrtthr" path="res://Ingredients/Apple.tscn" id="1_ig7tw"]
@@ -37,6 +37,7 @@
 [ext_resource type="PackedScene" uid="uid://ck7yjvsy52nnc" path="res://Characters/King.tscn" id="35_b1qrp"]
 [ext_resource type="PackedScene" uid="uid://cmq5828jm2e8a" path="res://Characters/Soldier.tscn" id="36_come4"]
 [ext_resource type="PackedScene" uid="uid://bbfdheig4g0bt" path="res://Characters/Warrior.tscn" id="37_h8e4i"]
+[ext_resource type="PackedScene" uid="uid://om7pw4cn3e45" path="res://Characters/Rogue.tscn" id="38_b1qrp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1u8w0"]
 texture = ExtResource("23_d13ii")
@@ -1249,3 +1250,6 @@ offset = Vector2(48, 48)
 
 [node name="Warrior" parent="Characters" instance=ExtResource("37_h8e4i")]
 offset = Vector2(48, 0)
+
+[node name="Rogue" parent="Characters" instance=ExtResource("38_b1qrp")]
+offset = Vector2(48, 16)
