@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://bx5wn2wcrtthr" path="res://Ingredients/Apple.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://chi0ngqhjs2ds" path="res://Ingredients/Cheese.tscn" id="2_0xm2m"]
-[ext_resource type="PackedScene" uid="uid://b8uh2d1yybsa0" path="res://Ingredients/Meat.tscn" id="3_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://b8uh2d1yybsa0" path="res://Ingredients/Ham.tscn" id="3_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://dq6xthm4jpqok" path="res://Ingredients/Fish.tscn" id="4_lquwl"]
 
 [node name="Node2D" type="Node2D"]
@@ -12,7 +12,7 @@
 [node name="Cheese" parent="." instance=ExtResource("2_0xm2m")]
 offset = Vector2(16, 16)
 
-[node name="Meat" parent="." instance=ExtResource("3_1bvp3")]
+[node name="Ham" parent="." instance=ExtResource("3_1bvp3")]
 offset = Vector2(32, 32)
 
 [node name="Fish" parent="." instance=ExtResource("4_lquwl")]
