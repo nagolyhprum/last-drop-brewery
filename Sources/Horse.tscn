@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dwthfqcq5q86r"]
+
+[ext_resource type="Texture2D" uid="uid://c1a8r1t8ojjla" path="res://Images/colored-transparent_packed.png" id="1_fss5r"]
+
+[node name="Horse" type="Sprite2D"]
+texture = ExtResource("1_fss5r")
+centered = false
+region_enabled = true
+region_rect = Rect2(448, 112, 16, 16)

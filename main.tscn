@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://dlls2n2o0oeqg"]
+[gd_scene load_steps=23 format=3 uid="uid://dlls2n2o0oeqg"]
 
 [ext_resource type="PackedScene" uid="uid://c28umakxaf3ca" path="res://Ingredients/Egg.tscn" id="1_7mycd"]
 [ext_resource type="PackedScene" uid="uid://bx5wn2wcrtthr" path="res://Ingredients/Apple.tscn" id="1_ig7tw"]
@@ -13,45 +13,104 @@
 [ext_resource type="PackedScene" uid="uid://d0f2w5jkjkk88" path="res://Reactions/TwoOfFour.tscn" id="11_ycdy4"]
 [ext_resource type="PackedScene" uid="uid://xd38ehec11kv" path="res://Reactions/ThreeOfFour.tscn" id="12_w48qg"]
 [ext_resource type="PackedScene" uid="uid://cweyvcx55tvw8" path="res://Reactions/FourOfFour.tscn" id="13_ycdy4"]
+[ext_resource type="PackedScene" uid="uid://noxp3ltnwckn" path="res://Sources/Pig.tscn" id="14_2cqfq"]
+[ext_resource type="PackedScene" uid="uid://dwthfqcq5q86r" path="res://Sources/Horse.tscn" id="14_ryguw"]
+[ext_resource type="PackedScene" uid="uid://js1y0iu3plrk" path="res://Sources/Pond.tscn" id="15_d13ii"]
+[ext_resource type="PackedScene" uid="uid://5dkb8cjpkgfo" path="res://Sources/Cow.tscn" id="15_yaehf"]
+[ext_resource type="PackedScene" uid="uid://cisjcqcqe0u01" path="res://Sources/CarrotBed.tscn" id="16_1u8w0"]
+[ext_resource type="PackedScene" uid="uid://cb42hl12esjf1" path="res://Sources/Ghost.tscn" id="16_074og"]
+[ext_resource type="PackedScene" uid="uid://d4lwnaev3q16a" path="res://Sources/AppleTree.tscn" id="17_074og"]
+[ext_resource type="PackedScene" uid="uid://doft12wsq8nkf" path="res://Sources/PearTree.tscn" id="18_cegan"]
+[ext_resource type="PackedScene" uid="uid://cpbmlao1hwu0q" path="res://Sources/Chicken.tscn" id="19_cegan"]
 
 [node name="Node2D" type="Node2D"]
-scale = Vector2(5, 5)
+scale = Vector2(4, 4)
 
-[node name="Egg" parent="." instance=ExtResource("1_7mycd")]
-offset = Vector2(64, 64)
+[node name="Ingredients" type="Node2D" parent="."]
 
-[node name="Apple" parent="." instance=ExtResource("1_ig7tw")]
+[node name="Egg" parent="Ingredients" instance=ExtResource("1_7mycd")]
+scale = Vector2(1, 1)
+offset = Vector2(16, 64)
 
-[node name="Cheese" parent="." instance=ExtResource("2_0xm2m")]
+[node name="Apple" parent="Ingredients" instance=ExtResource("1_ig7tw")]
+position = Vector2(16, 0)
+scale = Vector2(1, 1)
+
+[node name="Cheese" parent="Ingredients" instance=ExtResource("2_0xm2m")]
+scale = Vector2(1, 1)
 offset = Vector2(16, 16)
 
-[node name="Ham" parent="." instance=ExtResource("3_1bvp3")]
-offset = Vector2(32, 32)
-
-[node name="Fish" parent="." instance=ExtResource("4_lquwl")]
-offset = Vector2(48, 48)
-
-[node name="Pear" parent="." instance=ExtResource("6_272bh")]
-offset = Vector2(80, 80)
-
-[node name="Steak" parent="." instance=ExtResource("7_kek77")]
-offset = Vector2(96, 96)
-
-[node name="Carrot" parent="." instance=ExtResource("8_4c57u")]
-offset = Vector2(112, 112)
-
-[node name="Bone" parent="." instance=ExtResource("9_efxa6")]
-offset = Vector2(16, 0)
-
-[node name="OneOfFour" parent="." instance=ExtResource("10_dg77c")]
-offset = Vector2(32, 0)
-
-[node name="TwoOfFour" parent="." instance=ExtResource("11_ycdy4")]
+[node name="Ham" parent="Ingredients" instance=ExtResource("3_1bvp3")]
 scale = Vector2(1, 1)
-offset = Vector2(48, 0)
+offset = Vector2(16, 32)
 
-[node name="ThreeOfFour" parent="." instance=ExtResource("12_w48qg")]
-offset = Vector2(64, 0)
+[node name="Fish" parent="Ingredients" instance=ExtResource("4_lquwl")]
+scale = Vector2(1, 1)
+offset = Vector2(16, 48)
 
-[node name="FourOfFour" parent="." instance=ExtResource("13_ycdy4")]
-offset = Vector2(80, 0)
+[node name="Pear" parent="Ingredients" instance=ExtResource("6_272bh")]
+scale = Vector2(1, 1)
+offset = Vector2(16, 80)
+
+[node name="Steak" parent="Ingredients" instance=ExtResource("7_kek77")]
+scale = Vector2(1, 1)
+offset = Vector2(16, 96)
+
+[node name="Carrot" parent="Ingredients" instance=ExtResource("8_4c57u")]
+scale = Vector2(1, 1)
+offset = Vector2(16, 112)
+
+[node name="Bone" parent="Ingredients" instance=ExtResource("9_efxa6")]
+position = Vector2(0, 0.4)
+scale = Vector2(1, 1)
+offset = Vector2(16, 128)
+
+[node name="Reactions" type="Node2D" parent="."]
+
+[node name="OneOfFour" parent="Reactions" instance=ExtResource("10_dg77c")]
+position = Vector2(3.19996, 0)
+scale = Vector2(1, 1)
+offset = Vector2(112, 48)
+
+[node name="TwoOfFour" parent="Reactions" instance=ExtResource("11_ycdy4")]
+position = Vector2(3.19996, 0)
+scale = Vector2(1, 1)
+offset = Vector2(112, 32)
+
+[node name="ThreeOfFour" parent="Reactions" instance=ExtResource("12_w48qg")]
+position = Vector2(3.19996, 0)
+scale = Vector2(1, 1)
+offset = Vector2(112, 16)
+
+[node name="FourOfFour" parent="Reactions" instance=ExtResource("13_ycdy4")]
+position = Vector2(3.19996, 0)
+scale = Vector2(1, 1)
+offset = Vector2(112, 0)
+
+[node name="Sources" type="Node2D" parent="."]
+
+[node name="Horse" parent="Sources" instance=ExtResource("14_ryguw")]
+offset = Vector2(0, 96)
+
+[node name="Pond" parent="Sources" instance=ExtResource("15_d13ii")]
+offset = Vector2(0, 48)
+
+[node name="CarrotBed" parent="Sources" instance=ExtResource("16_1u8w0")]
+offset = Vector2(0, 112)
+
+[node name="Pig" parent="Sources" instance=ExtResource("14_2cqfq")]
+offset = Vector2(0, 32)
+
+[node name="Cow" parent="Sources" instance=ExtResource("15_yaehf")]
+offset = Vector2(0, 16)
+
+[node name="Ghost" parent="Sources" instance=ExtResource("16_074og")]
+offset = Vector2(0, 128)
+
+[node name="AppleTree" parent="Sources" instance=ExtResource("17_074og")]
+
+[node name="PearTree" parent="Sources" instance=ExtResource("18_cegan")]
+offset = Vector2(0, 80)
+
+[node name="Chicken" parent="Sources" instance=ExtResource("19_cegan")]
+offset = Vector2(0, 64)
