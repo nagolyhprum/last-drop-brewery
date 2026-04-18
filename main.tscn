@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=4 uid="uid://dlls2n2o0oeqg"]
+[gd_scene load_steps=35 format=4 uid="uid://dlls2n2o0oeqg"]
 
 [ext_resource type="PackedScene" uid="uid://c28umakxaf3ca" path="res://Ingredients/Egg.tscn" id="1_7mycd"]
 [ext_resource type="PackedScene" uid="uid://bx5wn2wcrtthr" path="res://Ingredients/Apple.tscn" id="1_ig7tw"]
@@ -23,6 +23,15 @@
 [ext_resource type="PackedScene" uid="uid://doft12wsq8nkf" path="res://Sources/PearTree.tscn" id="18_cegan"]
 [ext_resource type="PackedScene" uid="uid://cpbmlao1hwu0q" path="res://Sources/Chicken.tscn" id="19_cegan"]
 [ext_resource type="Texture2D" uid="uid://c1a8r1t8ojjla" path="res://Images/colored-transparent_packed.png" id="23_d13ii"]
+[ext_resource type="PackedScene" uid="uid://by6vj0ixsxebl" path="res://Stats/Strength.tscn" id="24_1u8w0"]
+[ext_resource type="PackedScene" uid="uid://dreaw74ha0wfp" path="res://Stats/Speed.tscn" id="24_htxhm"]
+[ext_resource type="PackedScene" uid="uid://batuto24nyxro" path="res://Stats/Luck.tscn" id="26_jq2sk"]
+[ext_resource type="PackedScene" uid="uid://g4clfihyxwb" path="res://Stats/Defense.tscn" id="27_4k2k6"]
+[ext_resource type="PackedScene" uid="uid://uaiv2p788l83" path="res://Stats/Health.tscn" id="28_0rl1p"]
+[ext_resource type="PackedScene" uid="uid://udsytb7imveo" path="res://Stats/Magic.tscn" id="29_ok6jj"]
+[ext_resource type="PackedScene" uid="uid://h2foshj4ruhl" path="res://Stats/Explosive.tscn" id="30_facbu"]
+[ext_resource type="PackedScene" uid="uid://pewwhnncwqwl" path="res://Stats/Unknown.tscn" id="31_b1qrp"]
+[ext_resource type="PackedScene" uid="uid://c0n7wfmn0adqv" path="res://Stats/Charisma.tscn" id="32_come4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1u8w0"]
 texture = ExtResource("23_d13ii")
@@ -1113,62 +1122,49 @@ scale = Vector2(4, 4)
 [node name="Ingredients" type="Node2D" parent="."]
 
 [node name="Egg" parent="Ingredients" instance=ExtResource("1_7mycd")]
-scale = Vector2(1, 1)
 offset = Vector2(16, 64)
 
 [node name="Apple" parent="Ingredients" instance=ExtResource("1_ig7tw")]
 position = Vector2(16, 0)
-scale = Vector2(1, 1)
 
 [node name="Cheese" parent="Ingredients" instance=ExtResource("2_0xm2m")]
-scale = Vector2(1, 1)
 offset = Vector2(16, 16)
 
 [node name="Ham" parent="Ingredients" instance=ExtResource("3_1bvp3")]
-scale = Vector2(1, 1)
 offset = Vector2(16, 32)
 
 [node name="Fish" parent="Ingredients" instance=ExtResource("4_lquwl")]
-scale = Vector2(1, 1)
 offset = Vector2(16, 48)
 
 [node name="Pear" parent="Ingredients" instance=ExtResource("6_272bh")]
-scale = Vector2(1, 1)
 offset = Vector2(16, 80)
 
 [node name="Steak" parent="Ingredients" instance=ExtResource("7_kek77")]
-scale = Vector2(1, 1)
 offset = Vector2(16, 96)
 
 [node name="Carrot" parent="Ingredients" instance=ExtResource("8_4c57u")]
-scale = Vector2(1, 1)
 offset = Vector2(16, 112)
 
 [node name="Bone" parent="Ingredients" instance=ExtResource("9_efxa6")]
 position = Vector2(0, 0.4)
-scale = Vector2(1, 1)
 offset = Vector2(16, 128)
 
 [node name="Reactions" type="Node2D" parent="."]
 
 [node name="OneOfFour" parent="Reactions" instance=ExtResource("10_dg77c")]
 position = Vector2(3.19996, 0)
-scale = Vector2(1, 1)
 offset = Vector2(112, 48)
 
 [node name="TwoOfFour" parent="Reactions" instance=ExtResource("11_ycdy4")]
 position = Vector2(3.19996, 0)
-scale = Vector2(1, 1)
 offset = Vector2(112, 32)
 
 [node name="ThreeOfFour" parent="Reactions" instance=ExtResource("12_w48qg")]
 position = Vector2(3.19996, 0)
-scale = Vector2(1, 1)
 offset = Vector2(112, 16)
 
 [node name="FourOfFour" parent="Reactions" instance=ExtResource("13_ycdy4")]
 position = Vector2(3.19996, 0)
-scale = Vector2(1, 1)
 offset = Vector2(112, 0)
 
 [node name="Sources" type="Node2D" parent="."]
@@ -1200,5 +1196,34 @@ offset = Vector2(0, 80)
 offset = Vector2(0, 64)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
-tile_map_data = PackedByteArray("AAAGAAgAAAAKAA8AAAAHAAgAAAALAA8AAAAIAAgAAAAMAA8AAAAGAAkAAAAMABAAAAAIAAkAAAAKABAAAAAHAAkAAAALABAAAAANAAkAAAADAAgAAAAOAAkAAAAEAAgAAAAPAAkAAAAEAAgAAAAQAAkAAAADAAgAABARAAcAAAACAAYAAAAMAAcAAAABAAgAAAAQAAsAAAAfAAMAAAAHAAoAAAAfAAMAAAAHAAsAAAAcAAIAAAAPAAsAAAAcAAIAAAAGAAsAAAAcAAAAAAAOAAsAAAAcAAAAAAAQAAoAAAAjAA4AAAAOAAoAAAAmAA4AAAAHAA8AAAASAAAAAAAIAA8AAAATAAAAAAAJAA8AAAATAAAAAAAKAA8AAAATAAAAAAALAA8AAAATAAAAAAAMAA8AAAATAAAAAAANAA8AAAAUAAAAAAAHABAAAAASAAEAAAAHABEAAAASAAEAAAAHABIAAAASAAEAAAAHABMAAAASAAEAAAAHABQAAAASAAIAAAAIABQAAAATAAIAAAAJABQAAAATAAIAAAAKABQAAAATAAIAAAALABQAAAATAAIAAAAMABQAAAATAAIAAAANABQAAAAUAAIAAAANABMAAAAUAAEAAAANABIAAAAUAAEAAAANABEAAAAUAAEAAAANABAAAAAUAAEAAAAJABAAAAAEAAIAAAAMABEAAAACAAEAAAAJABIAAAAOAAUAAAAMABMAAAAbAAcAAAAIABMAAAAcAAcAAAANAAcAAAAkABQAAAAPAAcAAAAlABQAAAAPAAYAAAAgAA4AAAAQAAYAAAAhAA0AAAARAAYAAAAiAA0AAAAMAA0AAAAfAAoAAAANAA0AAAAsABMAAAAOAA0AAAAjABIAAAAPAA0AAAApABMAAAAQAA0AAAAnABIAAAARAA0AAAAnABMAAAAPABAAAAAhABIAAAAPABEAAAAiABIAAAAPABIAAAAhABEAAAA=")
+tile_map_data = PackedByteArray("AAAGAAgAAAAKAA8AAAAHAAgAAAALAA8AAAAIAAgAAAAMAA8AAAAGAAkAAAAMABAAAAAIAAkAAAAKABAAAAAHAAkAAAAcABUAAAANAAkAAAADAAgAAAAOAAkAAAAEAAgAAAAPAAkAAAAEAAgAAAAQAAkAAAADAAgAABARAAcAAAACAAYAAAAMAAcAAAAhABIAAAAQAAsAAAAfAAMAAAAHAAoAAAAfAAMAAAAHAAsAAAAcAAIAAAAPAAsAAAAcAAIAAAAGAAsAAAAcAAAAAAAOAAsAAAAcAAAAAAAQAAoAAAAjAA4AAAAOAAoAAAAmAA4AAAAHAA8AAAASAAAAAAAIAA8AAAATAAAAAAAJAA8AAAATAAAAAAAKAA8AAAATAAAAAAALAA8AAAATAAAAAAAMAA8AAAATAAAAAAANAA8AAAAUAAAAAAAHABAAAAASAAEAAAAHABEAAAASAAEAAAAHABIAAAASAAEAAAAHABMAAAASAAEAAAAHABQAAAASAAIAAAAIABQAAAATAAIAAAAJABQAAAATAAIAAAAKABQAAAATAAIAAAALABQAAAATAAIAAAAMABQAAAATAAIAAAANABQAAAAUAAIAAAANABMAAAAUAAEAAAANABIAAAAUAAEAAAANABEAAAAUAAEAAAANABAAAAAUAAEAAAAJABAAAAAEAAIAAAAMABEAAAACAAEAAAAJABIAAAAOAAUAAAAMABMAAAAbAAcAAAAIABMAAAAcAAcAAAANAAcAAAAkABQAAAAQAAYAAAAhAA4AAAARAAYAAAAiAA0AAAAMAA0AAAAfAAoAAAANAA0AAAAsABMAAAAOAA0AAAAjABIAAAAPAA0AAAApABMAAAAQAA0AAAAnABIAAAARAA0AAAAnABMAAAAPABAAAAAhABIAAAAPABEAAAAiABIAAAAPABIAAAAhABEAAAAOAAcAAAAgAA0AAAANAAgAAAAlABQAAAANAAYAAAAmABQAAAAWAAsAAAAfAAMAAAAWAAoAAAAiAAsAAAAVAAoAAAAiAA8AAAAXAAoAAAAgAA4AAAARAAUAAAApAAQAAAAQAAUAAAAjABEAAAAPAAYAAAADAAcAAAA=")
 tile_set = SubResource("TileSet_0odxb")
+
+[node name="Stats" type="Node2D" parent="."]
+
+[node name="Speed" parent="Stats" instance=ExtResource("24_htxhm")]
+offset = Vector2(64, 16)
+
+[node name="Strength" parent="Stats" instance=ExtResource("24_1u8w0")]
+offset = Vector2(64, 0)
+
+[node name="Luck" parent="Stats" instance=ExtResource("26_jq2sk")]
+offset = Vector2(64, 32)
+
+[node name="Defense" parent="Stats" instance=ExtResource("27_4k2k6")]
+offset = Vector2(64, 48)
+
+[node name="Health" parent="Stats" instance=ExtResource("28_0rl1p")]
+offset = Vector2(64, 64)
+
+[node name="Magic" parent="Stats" instance=ExtResource("29_ok6jj")]
+offset = Vector2(64, 80)
+
+[node name="Explosive" parent="Stats" instance=ExtResource("30_facbu")]
+offset = Vector2(64, 96)
+
+[node name="Unknown" parent="Stats" instance=ExtResource("31_b1qrp")]
+offset = Vector2(64, 112)
+
+[node name="Charisma" parent="Stats" instance=ExtResource("32_come4")]
+offset = Vector2(64, 128)
