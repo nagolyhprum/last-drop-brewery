@@ -1,49 +1,9 @@
-[gd_scene load_steps=44 format=4 uid="uid://dlls2n2o0oeqg"]
+[gd_scene load_steps=4 format=4 uid="uid://b1u3p4ceomwod"]
 
-[ext_resource type="PackedScene" uid="uid://c28umakxaf3ca" path="res://Ingredients/Egg.tscn" id="1_7mycd"]
-[ext_resource type="PackedScene" uid="uid://bx5wn2wcrtthr" path="res://Ingredients/Apple.tscn" id="1_ig7tw"]
-[ext_resource type="PackedScene" uid="uid://chi0ngqhjs2ds" path="res://Ingredients/Cheese.tscn" id="2_0xm2m"]
-[ext_resource type="PackedScene" uid="uid://b8uh2d1yybsa0" path="res://Ingredients/Ham.tscn" id="3_1bvp3"]
-[ext_resource type="PackedScene" uid="uid://dq6xthm4jpqok" path="res://Ingredients/Fish.tscn" id="4_lquwl"]
-[ext_resource type="PackedScene" uid="uid://c26vetxskbadh" path="res://Ingredients/Pear.tscn" id="6_272bh"]
-[ext_resource type="PackedScene" uid="uid://b06ke02trbk25" path="res://Ingredients/Steak.tscn" id="7_kek77"]
-[ext_resource type="PackedScene" uid="uid://djn0a7xs2g216" path="res://Ingredients/Carrot.tscn" id="8_4c57u"]
-[ext_resource type="PackedScene" uid="uid://bw1djej8xwvlq" path="res://Ingredients/Bone.tscn" id="9_efxa6"]
-[ext_resource type="PackedScene" uid="uid://bjagokp8iu26s" path="res://Reactions/OneOfFour.tscn" id="10_dg77c"]
-[ext_resource type="PackedScene" uid="uid://d0f2w5jkjkk88" path="res://Reactions/TwoOfFour.tscn" id="11_ycdy4"]
-[ext_resource type="PackedScene" uid="uid://xd38ehec11kv" path="res://Reactions/ThreeOfFour.tscn" id="12_w48qg"]
-[ext_resource type="PackedScene" uid="uid://cweyvcx55tvw8" path="res://Reactions/FourOfFour.tscn" id="13_ycdy4"]
-[ext_resource type="PackedScene" uid="uid://noxp3ltnwckn" path="res://Sources/Pig.tscn" id="14_2cqfq"]
-[ext_resource type="PackedScene" uid="uid://dwthfqcq5q86r" path="res://Sources/Horse.tscn" id="14_ryguw"]
-[ext_resource type="PackedScene" uid="uid://js1y0iu3plrk" path="res://Sources/Pond.tscn" id="15_d13ii"]
-[ext_resource type="PackedScene" uid="uid://5dkb8cjpkgfo" path="res://Sources/Cow.tscn" id="15_yaehf"]
-[ext_resource type="PackedScene" uid="uid://cisjcqcqe0u01" path="res://Sources/CarrotBed.tscn" id="16_1u8w0"]
-[ext_resource type="PackedScene" uid="uid://cb42hl12esjf1" path="res://Sources/Ghost.tscn" id="16_074og"]
-[ext_resource type="PackedScene" uid="uid://d4lwnaev3q16a" path="res://Sources/AppleTree.tscn" id="17_074og"]
-[ext_resource type="PackedScene" uid="uid://doft12wsq8nkf" path="res://Sources/PearTree.tscn" id="18_cegan"]
-[ext_resource type="PackedScene" uid="uid://cpbmlao1hwu0q" path="res://Sources/Chicken.tscn" id="19_cegan"]
-[ext_resource type="Texture2D" uid="uid://c1a8r1t8ojjla" path="res://Images/colored-transparent_packed.png" id="23_d13ii"]
-[ext_resource type="PackedScene" uid="uid://by6vj0ixsxebl" path="res://Stats/Strength.tscn" id="24_1u8w0"]
-[ext_resource type="PackedScene" uid="uid://dreaw74ha0wfp" path="res://Stats/Speed.tscn" id="24_htxhm"]
-[ext_resource type="PackedScene" uid="uid://batuto24nyxro" path="res://Stats/Luck.tscn" id="26_jq2sk"]
-[ext_resource type="PackedScene" uid="uid://g4clfihyxwb" path="res://Stats/Defense.tscn" id="27_4k2k6"]
-[ext_resource type="PackedScene" uid="uid://uaiv2p788l83" path="res://Stats/Health.tscn" id="28_0rl1p"]
-[ext_resource type="PackedScene" uid="uid://udsytb7imveo" path="res://Stats/Magic.tscn" id="29_ok6jj"]
-[ext_resource type="PackedScene" uid="uid://h2foshj4ruhl" path="res://Stats/Explosive.tscn" id="30_facbu"]
-[ext_resource type="PackedScene" uid="uid://pewwhnncwqwl" path="res://Stats/Unknown.tscn" id="31_b1qrp"]
-[ext_resource type="PackedScene" uid="uid://c0n7wfmn0adqv" path="res://Stats/Charisma.tscn" id="32_come4"]
-[ext_resource type="PackedScene" uid="uid://cvau75sqjpgo5" path="res://Characters/Farmer.tscn" id="33_facbu"]
-[ext_resource type="PackedScene" uid="uid://bir8co2klupkm" path="res://Characters/Merchant.tscn" id="33_jq2sk"]
-[ext_resource type="PackedScene" uid="uid://ck7yjvsy52nnc" path="res://Characters/King.tscn" id="35_b1qrp"]
-[ext_resource type="PackedScene" uid="uid://cmq5828jm2e8a" path="res://Characters/Soldier.tscn" id="36_come4"]
-[ext_resource type="PackedScene" uid="uid://bbfdheig4g0bt" path="res://Characters/Warrior.tscn" id="37_h8e4i"]
-[ext_resource type="PackedScene" uid="uid://om7pw4cn3e45" path="res://Characters/Rogue.tscn" id="38_b1qrp"]
-[ext_resource type="PackedScene" uid="uid://cjuy8pqox6wr7" path="res://Characters/Mage.tscn" id="39_4lmeg"]
-[ext_resource type="PackedScene" uid="uid://bwnoqqbqn1k80" path="res://Characters/Barbarian.tscn" id="40_0cp0l"]
-[ext_resource type="PackedScene" uid="uid://bxxv63k3divtq" path="res://Characters/Enemy.tscn" id="41_d2t1y"]
+[ext_resource type="Texture2D" uid="uid://c1a8r1t8ojjla" path="res://Images/colored-transparent_packed.png" id="1_nihrx"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1u8w0"]
-texture = ExtResource("23_d13ii")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bxpib"]
+texture = ExtResource("1_nihrx")
 1:0/0 = 0
 2:0/0 = 0
 3:0/0 = 0
@@ -1122,146 +1082,12 @@ texture = ExtResource("23_d13ii")
 47:21/0 = 0
 48:21/0 = 0
 
-[sub_resource type="TileSet" id="TileSet_0odxb"]
-sources/0 = SubResource("TileSetAtlasSource_1u8w0")
+[sub_resource type="TileSet" id="TileSet_63qkx"]
+sources/0 = SubResource("TileSetAtlasSource_bxpib")
 
-[node name="Node2D" type="Node2D"]
+[node name="Town" type="Node2D"]
 scale = Vector2(4, 4)
 
-[node name="Ingredients" type="Node2D" parent="."]
-
-[node name="Egg" parent="Ingredients" instance=ExtResource("1_7mycd")]
-offset = Vector2(16, 64)
-
-[node name="Apple" parent="Ingredients" instance=ExtResource("1_ig7tw")]
-position = Vector2(16, 0)
-
-[node name="Cheese" parent="Ingredients" instance=ExtResource("2_0xm2m")]
-offset = Vector2(16, 16)
-
-[node name="Ham" parent="Ingredients" instance=ExtResource("3_1bvp3")]
-offset = Vector2(16, 32)
-
-[node name="Fish" parent="Ingredients" instance=ExtResource("4_lquwl")]
-offset = Vector2(16, 48)
-
-[node name="Pear" parent="Ingredients" instance=ExtResource("6_272bh")]
-offset = Vector2(16, 80)
-
-[node name="Steak" parent="Ingredients" instance=ExtResource("7_kek77")]
-offset = Vector2(16, 96)
-
-[node name="Carrot" parent="Ingredients" instance=ExtResource("8_4c57u")]
-offset = Vector2(16, 112)
-
-[node name="Bone" parent="Ingredients" instance=ExtResource("9_efxa6")]
-position = Vector2(0, 0.4)
-offset = Vector2(16, 128)
-
-[node name="Reactions" type="Node2D" parent="."]
-
-[node name="OneOfFour" parent="Reactions" instance=ExtResource("10_dg77c")]
-position = Vector2(3.19996, 0)
-offset = Vector2(112, 48)
-
-[node name="TwoOfFour" parent="Reactions" instance=ExtResource("11_ycdy4")]
-position = Vector2(3.19996, 0)
-offset = Vector2(112, 32)
-
-[node name="ThreeOfFour" parent="Reactions" instance=ExtResource("12_w48qg")]
-position = Vector2(3.19996, 0)
-offset = Vector2(112, 16)
-
-[node name="FourOfFour" parent="Reactions" instance=ExtResource("13_ycdy4")]
-position = Vector2(3.19996, 0)
-offset = Vector2(112, 0)
-
-[node name="Sources" type="Node2D" parent="."]
-
-[node name="Horse" parent="Sources" instance=ExtResource("14_ryguw")]
-offset = Vector2(0, 96)
-
-[node name="Pond" parent="Sources" instance=ExtResource("15_d13ii")]
-offset = Vector2(0, 48)
-
-[node name="CarrotBed" parent="Sources" instance=ExtResource("16_1u8w0")]
-offset = Vector2(0, 112)
-
-[node name="Pig" parent="Sources" instance=ExtResource("14_2cqfq")]
-offset = Vector2(0, 32)
-
-[node name="Cow" parent="Sources" instance=ExtResource("15_yaehf")]
-offset = Vector2(0, 16)
-
-[node name="Ghost" parent="Sources" instance=ExtResource("16_074og")]
-offset = Vector2(0, 128)
-
-[node name="AppleTree" parent="Sources" instance=ExtResource("17_074og")]
-
-[node name="PearTree" parent="Sources" instance=ExtResource("18_cegan")]
-offset = Vector2(0, 80)
-
-[node name="Chicken" parent="Sources" instance=ExtResource("19_cegan")]
-offset = Vector2(0, 64)
-
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
-tile_map_data = PackedByteArray("AAAGAAgAAAAKAA8AAAAHAAgAAAALAA8AAAAIAAgAAAAMAA8AAAAGAAkAAAAMABAAAAAIAAkAAAAKABAAAAAHAAkAAAAcABUAAAANAAkAAAADAAgAAAAOAAkAAAAEAAgAAAAPAAkAAAAEAAgAAAAQAAkAAAADAAgAABARAAcAAAACAAYAAAAMAAcAAAAhABIAAAAQAAsAAAAfAAMAAAAHAAoAAAAfAAMAAAAHAAsAAAAcAAIAAAAPAAsAAAAcAAIAAAAGAAsAAAAcAAAAAAAOAAsAAAAcAAAAAAAQAAoAAAAjAA4AAAAOAAoAAAAmAA4AAAAHAA8AAAASAAAAAAAIAA8AAAATAAAAAAAJAA8AAAATAAAAAAAKAA8AAAATAAAAAAALAA8AAAATAAAAAAAMAA8AAAATAAAAAAANAA8AAAAUAAAAAAAHABAAAAASAAEAAAAHABEAAAASAAEAAAAHABIAAAASAAEAAAAHABMAAAASAAEAAAAHABQAAAASAAIAAAAIABQAAAATAAIAAAAJABQAAAATAAIAAAAKABQAAAATAAIAAAALABQAAAATAAIAAAAMABQAAAATAAIAAAANABQAAAAUAAIAAAANABMAAAAUAAEAAAANABIAAAAUAAEAAAANABEAAAAUAAEAAAANABAAAAAUAAEAAAAJABAAAAAEAAIAAAAMABEAAAACAAEAAAAJABIAAAAOAAUAAAAMABMAAAAbAAcAAAAIABMAAAAcAAcAAAANAAcAAAAkABQAAAAQAAYAAAAhAA4AAAARAAYAAAAiAA0AAAAMAA0AAAAfAAoAAAANAA0AAAAsABMAAAAOAA0AAAAjABIAAAAPAA0AAAApABMAAAAQAA0AAAAnABIAAAARAA0AAAAnABMAAAAPABAAAAAhABIAAAAPABEAAAAiABIAAAAPABIAAAAhABEAAAAOAAcAAAAgAA0AAAANAAgAAAAlABQAAAANAAYAAAAmABQAAAAWAAsAAAAfAAMAAAAWAAoAAAAiAAsAAAAVAAoAAAAiAA8AAAAXAAoAAAAgAA4AAAARAAUAAAApAAQAAAAQAAUAAAAjABEAAAAPAAYAAAADAAcAAAA=")
-tile_set = SubResource("TileSet_0odxb")
-
-[node name="Stats" type="Node2D" parent="."]
-
-[node name="Speed" parent="Stats" instance=ExtResource("24_htxhm")]
-offset = Vector2(64, 16)
-
-[node name="Strength" parent="Stats" instance=ExtResource("24_1u8w0")]
-offset = Vector2(64, 0)
-
-[node name="Luck" parent="Stats" instance=ExtResource("26_jq2sk")]
-offset = Vector2(64, 32)
-
-[node name="Defense" parent="Stats" instance=ExtResource("27_4k2k6")]
-offset = Vector2(64, 48)
-
-[node name="Health" parent="Stats" instance=ExtResource("28_0rl1p")]
-offset = Vector2(64, 64)
-
-[node name="Magic" parent="Stats" instance=ExtResource("29_ok6jj")]
-offset = Vector2(64, 80)
-
-[node name="Explosive" parent="Stats" instance=ExtResource("30_facbu")]
-offset = Vector2(64, 96)
-
-[node name="Unknown" parent="Stats" instance=ExtResource("31_b1qrp")]
-offset = Vector2(64, 112)
-
-[node name="Charisma" parent="Stats" instance=ExtResource("32_come4")]
-offset = Vector2(64, 128)
-
-[node name="Characters" type="Node2D" parent="."]
-
-[node name="Farmer" parent="Characters" instance=ExtResource("33_facbu")]
-offset = Vector2(48, 32)
-
-[node name="Merchant" parent="Characters" instance=ExtResource("33_jq2sk")]
-offset = Vector2(48, 112)
-
-[node name="King" parent="Characters" instance=ExtResource("35_b1qrp")]
-offset = Vector2(48, 128)
-
-[node name="Soldier" parent="Characters" instance=ExtResource("36_come4")]
-offset = Vector2(48, 48)
-
-[node name="Warrior" parent="Characters" instance=ExtResource("37_h8e4i")]
-offset = Vector2(48, 0)
-
-[node name="Rogue" parent="Characters" instance=ExtResource("38_b1qrp")]
-offset = Vector2(48, 16)
-
-[node name="Mage" parent="Characters" instance=ExtResource("39_4lmeg")]
-offset = Vector2(48, 80)
-
-[node name="Barbarian" parent="Characters" instance=ExtResource("40_0cp0l")]
-offset = Vector2(48, 64)
-
-[node name="Enemy" parent="Characters" instance=ExtResource("41_d2t1y")]
-offset = Vector2(48, 96)
+tile_map_data = PackedByteArray("AAAGAAQAAAAGAA0AAAAHAAQAAAADAAkAAAAIAAQAAAAGAA0AAAAGAAMAAAAFAAwAAAAHAAMAAAAGAAwAAAAIAAMAAAAHAAwAAAACAAkAAAAIAAEAAAACAAgAAAAIAAEAAAACAAcAAAAIAAEAAAACAAYAAAAKAAEAAAACAAUAAAAIAAEAAAACAAQAAAAIAAEAAAACAAMAAAAIAAEAAAACAAIAAAAIAAEAAAACAAEAAAAIAAEAAAACAAAAAAAIAAEAAAAFAAQAAAAPAAgAAAADAAUAAAAQAAcAAAADAAYAAAAIAAEAAGAEAAYAAAAIAAEAAGAFAAYAAAAIAAEAAGAGAAYAAAAIAAEAAGAHAAYAAAAJAAEAADAHAAUAAAAIAAEAAAABAAkAAAADAAEAAAADAAcAAAADAAEAAAABAAYAAAADAAEAAAALAAQAAAADAAEAAAAKAAMAAAADAAEAAAAHAAEAAAADAAEAAAADAAIAAAADAAEAAAAAAAEAAAADAAEAAAANAAYAAAADAAEAAAALAAgAAAADAAEAAAAFAAkAAAABAAEAAAAHAAcAAAABAAEAAAAKAAYAAAABAAEAAAAEAAQAAAABAAEAAAABAAIAAAABAAEAAAAMAAIAAAABAAEAAAAKAAEAAAAGAAIAAAABAAQAAAAGAAIAAAAAAAgAAAAGAAIAAAAKAAkAAAAGAAIAAAAIAAgAAAAFAAIAAAADAAMAAAAFAAIAAAABAAcAAAAFAAIAAAAMAAMAAAAFAAIAAAAQAAkAAAAIAAQAAAAQAAgAAAAIAAQAAAAQAAcAAAAIAAQAAAAQAAYAAAAIAAQAAAAQAAUAAAAIAAQAAAAQAAQAAAAIAAQAAAAQAAMAAAAIAAQAAAAQAAIAAAAIAAQAAAAQAAEAAAAIAAQAAAAQAAAAAAAIAAQAAAAOAAIAAAAAAAIAAAAKAAAAAAAAAAIAAAAJAAIAAAAAAAIAAAAJAAUAAAAHAAAAAAAPAAAAAAAHAAAAAAAOAAgAAAAHAAAAAAAHAAkAAAAHAAAAAAAFAAIAAAAHAAAAAAAAAAMAAAAHAAAAAAARAAgAAAAFAAIAAAAPAAUAAAAFAAIAAAARAAQAAAAFAAEAAAA=")
+tile_set = SubResource("TileSet_63qkx")

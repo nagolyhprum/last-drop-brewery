@@ -9,12 +9,12 @@ You run a tiny potion shop where you must **brew drinks for customers using limi
 ## 🔁 Core Loop (Very Simple)
 
 1.  Customer appears with a vague request
-    -   “Something sweet and energizing”
-    -   “A calming fruit drink”
+	-   “Something sweet and energizing”
+	-   “A calming fruit drink”
 2.  You:
-    -   Pick ingredients (🍓 fruit, herbs, liquids)
-    -   Add them to a **brewing container**
-    -   Time or mix them (simple minigame or just combine)
+	-   Pick ingredients (🍓 fruit, herbs, liquids)
+	-   Add them to a **brewing container**
+	-   Time or mix them (simple minigame or just combine)
 3.  Serve the result → get a rating + coins
 4.  Use coins to **refill limited resources**
 
@@ -26,10 +26,10 @@ You run a tiny potion shop where you must **brew drinks for customers using limi
 
 -   Drag & drop 2–3 ingredients into a pot
 -   Each ingredient has simple properties:
-    -   Sweet 🍓
-    -   Bitter 🌿
-    -   Energy ⚡
-    -   Calm 🌙
+	-   Sweet 🍓
+	-   Bitter 🌿
+	-   Energy ⚡
+	-   Calm 🌙
 
 ➡️ Final potion = combined traits (no complex system needed)
 
@@ -40,9 +40,9 @@ You run a tiny potion shop where you must **brew drinks for customers using limi
 -   Ingredients are limited (e.g., 3 strawberries, 2 herbs)
 -   Water or base liquid refills slowly over time
 -   You can:
-    -   Buy refills
-    -   Wait for passive refill
-    -   Or reuse “waste” ingredients (risky mechanic)
+	-   Buy refills
+	-   Wait for passive refill
+	-   Or reuse “waste” ingredients (risky mechanic)
 
 * * *
 
@@ -67,10 +67,10 @@ You run a tiny potion shop where you must **brew drinks for customers using limi
 ### “Overbrew Risk”
 
 -   If you add too many ingredients:
-    -   Potion becomes unstable 💥
-    -   Could either:
-        -   Be amazing (rare bonus)
-        -   Or fail completely
+	-   Potion becomes unstable 💥
+	-   Could either:
+		-   Be amazing (rare bonus)
+		-   Or fail completely
 
 ➡️ Adds tension without complexity
 
@@ -79,9 +79,9 @@ You run a tiny potion shop where you must **brew drinks for customers using limi
 ## 🧱 Super Simple Tech Scope (Godot-friendly)
 
 -   One main scene:
-    -   Ingredient buttons
-    -   Brewing slots (2–3 max)
-    -   Customer request text
+	-   Ingredient buttons
+	-   Brewing slots (2–3 max)
+	-   Customer request text
 -   No need for physics
 -   Data-driven ingredients (just dictionaries)ta-driven ingredients (just dictionaries)
 

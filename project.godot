@@ -11,9 +11,17 @@ config_version=5
 [application]
 
 config/name="Last Drop Brewery"
-run/main_scene="res://main.tscn"
+run/main_scene="uid://b1u3p4ceomwod"
 config/features=PackedStringArray("4.4", "GL Compatibility")
-config/icon="res://icon.svg"
+
+[autoload]
+
+State="*res://State.gd"
+Scenes="*res://Scenes.gd"
+
+[display]
+
+window/stretch/mode="canvas_items"
 
 [rendering]
 
