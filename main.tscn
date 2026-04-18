@@ -1,11 +1,17 @@
-[gd_scene load_steps=5 format=3 uid="uid://dlls2n2o0oeqg"]
+[gd_scene load_steps=7 format=3 uid="uid://dlls2n2o0oeqg"]
 
+[ext_resource type="PackedScene" uid="uid://c28umakxaf3ca" path="res://Ingredients/Egg.tscn" id="1_7mycd"]
 [ext_resource type="PackedScene" uid="uid://bx5wn2wcrtthr" path="res://Ingredients/Apple.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://chi0ngqhjs2ds" path="res://Ingredients/Cheese.tscn" id="2_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://b8uh2d1yybsa0" path="res://Ingredients/Ham.tscn" id="3_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://dq6xthm4jpqok" path="res://Ingredients/Fish.tscn" id="4_lquwl"]
+[ext_resource type="PackedScene" uid="uid://c26vetxskbadh" path="res://Ingredients/Pear.tscn" id="6_272bh"]
 
 [node name="Node2D" type="Node2D"]
+scale = Vector2(5, 5)
+
+[node name="Egg" parent="." instance=ExtResource("1_7mycd")]
+offset = Vector2(64, 64)
 
 [node name="Apple" parent="." instance=ExtResource("1_ig7tw")]
 
@@ -17,3 +23,6 @@ offset = Vector2(32, 32)
 
 [node name="Fish" parent="." instance=ExtResource("4_lquwl")]
 offset = Vector2(48, 48)
+
+[node name="Pear" parent="." instance=ExtResource("6_272bh")]
+offset = Vector2(80, 80)

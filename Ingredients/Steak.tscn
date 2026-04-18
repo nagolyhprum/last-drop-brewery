@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://b06ke02trbk25"]
+
+[ext_resource type="Texture2D" uid="uid://c1a8r1t8ojjla" path="res://Images/colored-transparent_packed.png" id="1_actj1"]
+
+[node name="Steak" type="Sprite2D"]
+texture = ExtResource("1_actj1")
+centered = false
+region_enabled = true
+region_rect = Rect2(544, 304, 16, 16)
