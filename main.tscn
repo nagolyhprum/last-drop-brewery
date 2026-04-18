@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=4 uid="uid://dlls2n2o0oeqg"]
+[gd_scene load_steps=40 format=4 uid="uid://dlls2n2o0oeqg"]
 
 [ext_resource type="PackedScene" uid="uid://c28umakxaf3ca" path="res://Ingredients/Egg.tscn" id="1_7mycd"]
 [ext_resource type="PackedScene" uid="uid://bx5wn2wcrtthr" path="res://Ingredients/Apple.tscn" id="1_ig7tw"]
@@ -32,6 +32,11 @@
 [ext_resource type="PackedScene" uid="uid://h2foshj4ruhl" path="res://Stats/Explosive.tscn" id="30_facbu"]
 [ext_resource type="PackedScene" uid="uid://pewwhnncwqwl" path="res://Stats/Unknown.tscn" id="31_b1qrp"]
 [ext_resource type="PackedScene" uid="uid://c0n7wfmn0adqv" path="res://Stats/Charisma.tscn" id="32_come4"]
+[ext_resource type="PackedScene" uid="uid://cvau75sqjpgo5" path="res://Characters/Farmer.tscn" id="33_facbu"]
+[ext_resource type="PackedScene" uid="uid://bir8co2klupkm" path="res://Characters/Merchant.tscn" id="33_jq2sk"]
+[ext_resource type="PackedScene" uid="uid://ck7yjvsy52nnc" path="res://Characters/King.tscn" id="35_b1qrp"]
+[ext_resource type="PackedScene" uid="uid://cmq5828jm2e8a" path="res://Characters/Soldier.tscn" id="36_come4"]
+[ext_resource type="PackedScene" uid="uid://bbfdheig4g0bt" path="res://Characters/Warrior.tscn" id="37_h8e4i"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1u8w0"]
 texture = ExtResource("23_d13ii")
@@ -1227,3 +1232,20 @@ offset = Vector2(64, 112)
 
 [node name="Charisma" parent="Stats" instance=ExtResource("32_come4")]
 offset = Vector2(64, 128)
+
+[node name="Characters" type="Node2D" parent="."]
+
+[node name="Farmer" parent="Characters" instance=ExtResource("33_facbu")]
+offset = Vector2(48, 32)
+
+[node name="Merchant" parent="Characters" instance=ExtResource("33_jq2sk")]
+offset = Vector2(48, 112)
+
+[node name="King" parent="Characters" instance=ExtResource("35_b1qrp")]
+offset = Vector2(48, 128)
+
+[node name="Soldier" parent="Characters" instance=ExtResource("36_come4")]
+offset = Vector2(48, 48)
+
+[node name="Warrior" parent="Characters" instance=ExtResource("37_h8e4i")]
+offset = Vector2(48, 0)
