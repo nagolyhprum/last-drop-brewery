@@ -1,12 +1,7 @@
 [gd_scene load_steps=2 format=3 uid="uid://dlls2n2o0oeqg"]
 
-[ext_resource type="Texture2D" uid="uid://c1a8r1t8ojjla" path="res://colored-transparent_packed.png" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://bx5wn2wcrtthr" path="res://Apple.tscn" id="1_ig7tw"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Colored-transparentPacked" type="Sprite2D" parent="."]
-position = Vector2(80, 80)
-scale = Vector2(10, 10)
-texture = ExtResource("1_ig7tw")
-region_enabled = true
-region_rect = Rect2(16, 16, 16, 16)
+[node name="Apple" parent="." instance=ExtResource("1_ig7tw")]
