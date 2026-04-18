@@ -84,3 +84,11 @@ You run a tiny potion shop where you must **brew drinks for customers using limi
     -   Customer request text
 -   No need for physics
 -   Data-driven ingredients (just dictionaries)ta-driven ingredients (just dictionaries)
+
+Game Loop Written By Logan
+1. Scene 1 - you watch customers walk into your shop - based on what a customer looks like will determine what they are likely to want
+2. Scene 2 - you harvest resources from your garden based on who you saw walk in, you can no longer see who walked in from the garden. You can choose what you harvest (animals and plants) but be careful, you can only gather so much and what you take can spoil
+3. Scene 3 - you go to your shop and start mixing potions for travels using simple additive or negation mixing processes. Customers walk out after getting a potion with a reaction above their head and pay you
+4. Scene 4 - an over night event happens - you get robbed (can be prevented if you have a dog), you find spare money or product
+
+Merchants can also come to your shop and sell recipes for special potions that improve your shop, or keys, or bottles for potions
