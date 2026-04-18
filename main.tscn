@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://dlls2n2o0oeqg"]
+[gd_scene load_steps=14 format=3 uid="uid://dlls2n2o0oeqg"]
 
 [ext_resource type="PackedScene" uid="uid://c28umakxaf3ca" path="res://Ingredients/Egg.tscn" id="1_7mycd"]
 [ext_resource type="PackedScene" uid="uid://bx5wn2wcrtthr" path="res://Ingredients/Apple.tscn" id="1_ig7tw"]
@@ -9,6 +9,10 @@
 [ext_resource type="PackedScene" uid="uid://b06ke02trbk25" path="res://Ingredients/Steak.tscn" id="7_kek77"]
 [ext_resource type="PackedScene" uid="uid://djn0a7xs2g216" path="res://Ingredients/Carrot.tscn" id="8_4c57u"]
 [ext_resource type="PackedScene" uid="uid://bw1djej8xwvlq" path="res://Ingredients/Bone.tscn" id="9_efxa6"]
+[ext_resource type="PackedScene" uid="uid://bjagokp8iu26s" path="res://Reactions/OneOfFour.tscn" id="10_dg77c"]
+[ext_resource type="PackedScene" uid="uid://d0f2w5jkjkk88" path="res://Reactions/TwoOfFour.tscn" id="11_ycdy4"]
+[ext_resource type="PackedScene" uid="uid://xd38ehec11kv" path="res://Reactions/ThreeOfFour.tscn" id="12_w48qg"]
+[ext_resource type="PackedScene" uid="uid://cweyvcx55tvw8" path="res://Reactions/FourOfFour.tscn" id="13_ycdy4"]
 
 [node name="Node2D" type="Node2D"]
 scale = Vector2(5, 5)
@@ -38,3 +42,16 @@ offset = Vector2(112, 112)
 
 [node name="Bone" parent="." instance=ExtResource("9_efxa6")]
 offset = Vector2(16, 0)
+
+[node name="OneOfFour" parent="." instance=ExtResource("10_dg77c")]
+offset = Vector2(32, 0)
+
+[node name="TwoOfFour" parent="." instance=ExtResource("11_ycdy4")]
+scale = Vector2(1, 1)
+offset = Vector2(48, 0)
+
+[node name="ThreeOfFour" parent="." instance=ExtResource("12_w48qg")]
+offset = Vector2(64, 0)
+
+[node name="FourOfFour" parent="." instance=ExtResource("13_ycdy4")]
+offset = Vector2(80, 0)
