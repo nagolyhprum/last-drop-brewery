@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dlls2n2o0oeqg"]
+[gd_scene load_steps=10 format=3 uid="uid://dlls2n2o0oeqg"]
 
 [ext_resource type="PackedScene" uid="uid://c28umakxaf3ca" path="res://Ingredients/Egg.tscn" id="1_7mycd"]
 [ext_resource type="PackedScene" uid="uid://bx5wn2wcrtthr" path="res://Ingredients/Apple.tscn" id="1_ig7tw"]
@@ -6,6 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://b8uh2d1yybsa0" path="res://Ingredients/Ham.tscn" id="3_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://dq6xthm4jpqok" path="res://Ingredients/Fish.tscn" id="4_lquwl"]
 [ext_resource type="PackedScene" uid="uid://c26vetxskbadh" path="res://Ingredients/Pear.tscn" id="6_272bh"]
+[ext_resource type="PackedScene" uid="uid://b06ke02trbk25" path="res://Ingredients/Steak.tscn" id="7_kek77"]
+[ext_resource type="PackedScene" uid="uid://djn0a7xs2g216" path="res://Ingredients/Carrot.tscn" id="8_4c57u"]
+[ext_resource type="PackedScene" uid="uid://bw1djej8xwvlq" path="res://Ingredients/Bone.tscn" id="9_efxa6"]
 
 [node name="Node2D" type="Node2D"]
 scale = Vector2(5, 5)
@@ -26,3 +29,12 @@ offset = Vector2(48, 48)
 
 [node name="Pear" parent="." instance=ExtResource("6_272bh")]
 offset = Vector2(80, 80)
+
+[node name="Steak" parent="." instance=ExtResource("7_kek77")]
+offset = Vector2(96, 96)
+
+[node name="Carrot" parent="." instance=ExtResource("8_4c57u")]
+offset = Vector2(112, 112)
+
+[node name="Bone" parent="." instance=ExtResource("9_efxa6")]
+offset = Vector2(16, 0)
