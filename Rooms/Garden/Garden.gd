@@ -35,4 +35,8 @@ func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) 
 			var ingredient = source_and_ingredient["ingredient"].instantiate()
 			add_child(ingredient)
 			print(row, ", ", column)
+			for sai in State.garden_sources_and_ingredients:
+				if sai:
+					return			
+			get_tree().change_scene_to_packed(Scenes.SHOP)
 		

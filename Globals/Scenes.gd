@@ -15,5 +15,9 @@ const CHARACTER_PLAYER = preload("res://Characters/Player.tscn")
 const CHARACTER_SOLDIER = preload("res://Characters/Soldier.tscn")
 const CHARACTER_WARRIOR = preload("res://Characters/Warrior.tscn")
 
+const TOWN = preload("res://Rooms/Town/Town.tscn")
+
 const GARDEN = preload("res://Rooms/Garden/Garden.tscn")
 const GARDEN_WALKING_CHARACTER = preload("res://Rooms/Town/WalkingCharacter.tscn")
+
+const SHOP = preload("res://Rooms/Shop.tscn")
