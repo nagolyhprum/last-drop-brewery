@@ -13,10 +13,10 @@ func spawn_characters():
 			done_travelling()
 	
 	for i in range(count):
-		var index = randi() % len(Scenes.SHOPPERS)
-		var shopper = Scenes.SHOPPERS[index].instantiate()
-		var stat = Scenes.STATS[index].instantiate()
-		var walking_character = Scenes.WALKING_CHARACTER.instantiate()
+		var index = randi() % len(Constants.SHOPPERS)
+		var shopper = Constants.SHOPPERS[index].instantiate()
+		var stat = Constants.STATS[index].instantiate()
+		var walking_character = Scenes.GARDEN_WALKING_CHARACTER.instantiate()
 		add_child(walking_character)
 		walking_character.set_character_and_stat(shopper, stat)
 		walking_character.reached_door.connect(remove_character)

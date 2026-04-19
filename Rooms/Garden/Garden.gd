@@ -12,12 +12,12 @@ func _ready():
 	for column in range(COLUMNS):
 		for row in range(ROWS):
 			if randf() > .95:
-				var index = randi() % len(Scenes.SOURCES)			
-				var source = Scenes.SOURCES[index].instantiate()
+				var index = randi() % len(Constants.SOURCES)			
+				var source = Constants.SOURCES[index].instantiate()
 				source.position.x = (column + OFFSET) * SIZE
 				source.position.y = (row + OFFSET) * SIZE
 				add_child(source)
-				var ingredient = Scenes.INGREDIENTS[index]
+				var ingredient = Constants.INGREDIENTS[index]
 				State.garden_sources_and_ingredients[row * COLUMNS + column] = {
 					"source": source,
 					"ingredient": ingredient
@@ -32,5 +32,7 @@ func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) 
 		if source_and_ingredient:
 			State.garden_sources_and_ingredients[index] = null
 			source_and_ingredient["source"].queue_free()
+			var ingredient = source_and_ingredient["ingredient"].instantiate()
+			add_child(ingredient)
 			print(row, ", ", column)
 		
