@@ -1,7 +1,7 @@
 extends Node2D
 
 func done_travelling():
-	spawn_characters()
+	get_tree().change_scene_to_packed(Scenes.GARDEN)
 
 func spawn_characters():
 	var count = (randi() % 3) + 1

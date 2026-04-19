@@ -19,19 +19,16 @@ func set_character_and_stat(character, stat):
 	
 
 var time := 0.0
-var speed := 50     # walking speed
-var amplitude := 0.1    # how much it squishes
+var speed := 50
+var amplitude := 0.1
 	
 func _process(delta):
 	time += delta
-	
 	var wave = sin(time * speed / 3)
-
-	# vertical squash + horizontal stretch
 	character.scale.y = 1 + wave * amplitude
 	character.scale.x = 1 - wave * amplitude
 
-	path_follow.progress += delta * 50
+	path_follow.progress += delta * speed
 	if path_follow.progress_ratio >= 1:
 		queue_free()
 		reached_door.emit()

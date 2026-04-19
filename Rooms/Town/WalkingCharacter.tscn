@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cgyiotv16xycg"]
 
-[ext_resource type="Script" uid="uid://ijav25271tu6" path="res://WalkingCharacter.gd" id="1_5f6oc"]
+[ext_resource type="Script" uid="uid://ijav25271tu6" path="res://Rooms/Town/WalkingCharacter.gd" id="1_5f6oc"]
 [ext_resource type="PackedScene" uid="uid://om7pw4cn3e45" path="res://Characters/Rogue.tscn" id="1_167ud"]
 [ext_resource type="PackedScene" uid="uid://dreaw74ha0wfp" path="res://Stats/Speed.tscn" id="2_5f6oc"]
 
