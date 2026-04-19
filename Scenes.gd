@@ -14,3 +14,5 @@ const CHARACTER_PLAYER = preload("res://Characters/Player.tscn")
 const CHARACTER_SOLDIER = preload("res://Characters/Soldier.tscn")
 const CHARACTER_WARRIOR = preload("res://Characters/Warrior.tscn")
 const SHOPPERS = [CHARACTER_SOLDIER, CHARACTER_WARRIOR]
+
+const WALKING_CHARACTER = preload("res://WalkingCharacter.tscn")

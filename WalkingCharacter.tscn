@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://cgyiotv16xycg"]
+
+[ext_resource type="Script" uid="uid://ijav25271tu6" path="res://WalkingCharacter.gd" id="1_5f6oc"]
+[ext_resource type="PackedScene" uid="uid://om7pw4cn3e45" path="res://Characters/Rogue.tscn" id="1_167ud"]
+[ext_resource type="PackedScene" uid="uid://dreaw74ha0wfp" path="res://Stats/Speed.tscn" id="2_5f6oc"]
+
+[sub_resource type="Curve2D" id="Curve2D_bxpib"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 40, 0, 0, 0, 0, 0, 40, 104, 0, 0, 0, 0, 120, 104, 0, 0, 0, 0, 120, 72)
+}
+point_count = 4
+
+[node name="Path2D" type="Path2D"]
+curve = SubResource("Curve2D_bxpib")
+script = ExtResource("1_5f6oc")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="."]
+position = Vector2(40, 0)
+rotates = false
+loop = false
+
+[node name="Rogue" parent="PathFollow2D" instance=ExtResource("1_167ud")]
+
+[node name="Speed" parent="PathFollow2D" instance=ExtResource("2_5f6oc")]
+offset = Vector2(0, -16)

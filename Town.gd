@@ -1,13 +1,27 @@
 extends Node2D
 
-@onready var root = $"."
+func done_travelling():
+	spawn_characters()
 
+func spawn_characters():
+	var count = (randi() % 3) + 1
+	var original_count = get_child_count()
+	var remove_character = func ():
+		await get_tree().process_frame
+		var new_count = get_child_count()
+		if original_count == new_count:
+			done_travelling()
+	
+	for i in range(count):
+		var index = randi() % len(Scenes.SHOPPERS)
+		var shopper = Scenes.SHOPPERS[index].instantiate()
+		var stat = Scenes.STATS[index].instantiate()
+		var walking_character = Scenes.WALKING_CHARACTER.instantiate()
+		add_child(walking_character)
+		walking_character.set_character_and_stat(shopper, stat)
+		walking_character.reached_door.connect(remove_character)
+		await get_tree().create_timer(1.0).timeout
+	
 func _ready() -> void:
-	var index = randi() % len(Scenes.SHOPPERS)
-	var shopper = Scenes.SHOPPERS[index].instantiate()
-	var stat = Scenes.STATS[index].instantiate()
-	stat.position.y = -16
-	shopper.add_child(stat)
-	shopper.position.x = 32
-	shopper.position.y = 32		
-	root.add_child(shopper)
+	spawn_characters()
+	
