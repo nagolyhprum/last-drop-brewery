@@ -11,7 +11,7 @@ func _ready():
 	State.garden_sources_and_ingredients.resize(ROWS * COLUMNS)
 	for column in range(COLUMNS):
 		for row in range(ROWS):
-			if randf() > .90:
+			if randf() > .95:
 				var index = randi() % len(Scenes.SOURCES)			
 				var source = Scenes.SOURCES[index].instantiate()
 				source.position.x = (column + OFFSET) * SIZE
